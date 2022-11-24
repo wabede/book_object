@@ -1,5 +1,6 @@
 package com.example.bookobject.ticket;
 
+import com.example.bookobject.user.Audience;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,13 +13,17 @@ public class TicketOffice {
         this.amount = amount;
         this.tickets.addAll(Arrays.asList(tickets));
     }
-    public Ticket getTicket(){
+    public void sellTicketTo(Audience audience){
+        plusAmount(audience.buy(getTicket()));
+
+    }
+    private Ticket getTicket(){
         return tickets.remove(0);
     }
-    public void minusAcmount(Long amount){
+    private void minusAmount(Long amount){
         this.amount -=amount;
     }
-    public void plusAmount(Long amount){
+    private void plusAmount(Long amount){
         this.amount+=amount;
     }
 }

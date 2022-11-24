@@ -4,7 +4,7 @@ import com.example.bookobject.movie.Money;
 import com.example.bookobject.movie.Screening;
 import com.example.bookobject.movie.condition.DiscountCondition;
 
-public class PercentDiscountPolicy extends DiscountPolicy {
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
     private double percent;
 
     public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {

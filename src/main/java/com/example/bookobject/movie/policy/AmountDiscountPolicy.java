@@ -4,7 +4,7 @@ import com.example.bookobject.movie.Money;
 import com.example.bookobject.movie.Screening;
 import com.example.bookobject.movie.condition.DiscountCondition;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {

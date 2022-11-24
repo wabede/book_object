@@ -8,23 +8,28 @@ public class Bag {
     private Invitation invitation;
     private Ticket ticket;
 
-    public Bag(long amount){ //일반 관람객
-        this(null,amount);
-    }
     public Bag(Invitation invitation, long amount){ //초대 관람객
         this.invitation = invitation;
         this.amount = amount;
     }
-    public boolean hasInvitation(){
+
+    public Long hold(Ticket ticket){
+        if(hasInvitation()){
+            setTicket(ticket);
+            return 0L;
+        }else{
+            setTicket(ticket);
+            minusAmount(ticket.getFee());
+        }
+        return ticket.getFee();
+    }
+    private boolean hasInvitation(){
         return invitation != null;
     }
-    public boolean hasTicket(){
-        return ticket != null;
-    }
-    public void setTicket(Ticket ticket){
+    private void setTicket(Ticket ticket){
         this.amount -= amount;
     }
-    public void plusAmount(Long amount){
+    private void plusAmount(Long amount){
         this.amount += amount;
     }
 

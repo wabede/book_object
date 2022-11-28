@@ -1,6 +1,6 @@
-package com.example.bookobject.movie.condition;
+package com.example.bookobject.ex_movie.movie.condition;
 
-import com.example.bookobject.movie.Screening;
+import com.example.bookobject.ex_movie.movie.Screening;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 

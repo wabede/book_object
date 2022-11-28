@@ -1,4 +1,4 @@
-package com.example.bookobject.movie;
+package com.example.bookobject.ex_movie.movie;
 
 public class Reservation {
     private Customer customer;

@@ -1,6 +1,6 @@
-package com.example.bookobject.movie;
+package com.example.bookobject.ex_movie.movie;
 
-import com.example.bookobject.movie.condition.DiscountCondition;
+import com.example.bookobject.ex_movie.movie.condition.DiscountCondition;
 
 public class SequenceDiscountCondition implements DiscountCondition {
     private int sequence;

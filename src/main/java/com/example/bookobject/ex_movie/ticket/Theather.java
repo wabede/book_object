@@ -1,6 +1,6 @@
-package com.example.bookobject.ticket;
+package com.example.bookobject.ex_movie.ticket;
 
-import com.example.bookobject.user.Audience;
+import com.example.bookobject.ex_movie.user.Audience;
 
 public class Theather{
     private TicketSeller ticketSeller;

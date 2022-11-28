@@ -1,7 +1,7 @@
-package com.example.bookobject.movie.policy;
+package com.example.bookobject.ex_movie.movie.policy;
 
-import com.example.bookobject.movie.Money;
-import com.example.bookobject.movie.Screening;
+import com.example.bookobject.ex_movie.movie.Money;
+import com.example.bookobject.ex_movie.movie.Screening;
 
 public class NoneDiscountPolicy implements DiscountPolicy {
 

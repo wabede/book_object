@@ -1,6 +1,6 @@
-package com.example.bookobject.ticket;
+package com.example.bookobject.ex_movie.ticket;
 
-import com.example.bookobject.user.Audience;
+import com.example.bookobject.ex_movie.user.Audience;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

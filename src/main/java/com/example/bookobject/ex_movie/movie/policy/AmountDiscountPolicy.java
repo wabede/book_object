@@ -1,8 +1,8 @@
-package com.example.bookobject.movie.policy;
+package com.example.bookobject.ex_movie.movie.policy;
 
-import com.example.bookobject.movie.Money;
-import com.example.bookobject.movie.Screening;
-import com.example.bookobject.movie.condition.DiscountCondition;
+import com.example.bookobject.ex_movie.movie.Money;
+import com.example.bookobject.ex_movie.movie.Screening;
+import com.example.bookobject.ex_movie.movie.condition.DiscountCondition;
 
 public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;

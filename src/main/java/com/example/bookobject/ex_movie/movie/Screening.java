@@ -1,4 +1,4 @@
-package com.example.bookobject.movie;
+package com.example.bookobject.ex_movie.movie;
 
 import java.time.LocalDateTime;
 

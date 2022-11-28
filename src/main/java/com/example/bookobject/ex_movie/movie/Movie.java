@@ -1,11 +1,8 @@
-package com.example.bookobject.movie;
+package com.example.bookobject.ex_movie.movie;
 
-import com.example.bookobject.movie.condition.PeriodDiscountCondition;
-import com.example.bookobject.movie.policy.AmountDiscountPolicy;
-import com.example.bookobject.movie.policy.DiscountPolicy;
-import java.time.DayOfWeek;
+import com.example.bookobject.ex_movie.movie.policy.AmountDiscountPolicy;
+import com.example.bookobject.ex_movie.movie.policy.DiscountPolicy;
 import java.time.Duration;
-import java.time.LocalTime;
 
 public class Movie {
     private String title;

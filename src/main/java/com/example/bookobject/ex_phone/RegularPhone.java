@@ -10,17 +10,21 @@ public class RegularPhone extends Phone {
     private Duration seconds;
     private List<Call> calls = new ArrayList<>();
 
-    public RegularPhone(Money amount, Duration seconds) {
+    public RegularPhone(Money amount, Duration seconds, double taxRate) {
+        super(taxRate);
         this.amount = amount;
         this.seconds = seconds;
     }
-    public void call(Call call){
+
+    public void call(Call call) {
         calls.add(call);
     }
+
     @Override
-    public Money calculateCallFee(Call call){
-        return amount.times(call.getDuration().getSeconds()/seconds.getSeconds());
+    public Money calculateCallFee(Call call) {
+        return amount.times(call.getDuration().getSeconds() / seconds.getSeconds());
     }
+
     public Money getAmount() {
         return amount;
     }

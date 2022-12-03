@@ -9,11 +9,13 @@ public class NightlyDiscountPhone extends Phone {
     private Money regularAmount;
     private Duration seconds;
 
-    public NightlyDiscountPhone(Money nightlyAmount, Money regularAmount, Duration seconds) {
+    public NightlyDiscountPhone(Money nightlyAmount, Money regularAmount, Duration seconds, double taxRate) {
+        super(taxRate);
         this.nightlyAmount = nightlyAmount;
         this.regularAmount = regularAmount;
         this.seconds = seconds;
     }
+
     @Override
     public Money calculateCallFee(Call call) {
         if (call.getFrom().getHour() >= LATE_NIGHT_HOUR) {
